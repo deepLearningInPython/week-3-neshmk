@@ -85,7 +85,6 @@ def convolute_2d(input_matrix, kernel_matrix):
     output_width = input_width - kernel_width + 1
     output_matrix = np.zeros((output_height, output_width))
 
-    # Perform the convolution using nested loops
     for i in range(output_height):
         for j in range(output_width):
             sub_matrix = input_matrix[i:i + kernel_height, j:j + kernel_width]
